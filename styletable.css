@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+:root{
+    --primarycolor:#040404;
+    --secondarycolor:#F2F1F2;
+    --thirdcolor:#95A1F9;
+}
+
+nav a{
+    margin:7px;
+    padding: 4px;
+  
+}
+
+button:hover{
+        font-size: 1.4rem;
+        border: 2px solid var(--thirdcolor);
+        border-radius: 2.5px;
+        transition: font-size 0.25s ease-in-out;
+    }
+
+
+body{
+    background-color:var(--primarycolor) ;
+    
+}
+
+
+
+
+
+
+
+input[type='text'],input[type='email'] ,select ,option,textarea{
+    color: black;
+    width: 100%;
+}
+
+button{
+    background-color: var(--primarycolor);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px #95A1F9;
+    border: 2px solid var(--thirdcolor);
+}

@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+}
+
+:root{
+    --primarycolor:#040404;
+    --secondarycolor:#F2F1F2;
+    --thirdcolor:#95A1F9;
+}
+
+nav a{
+    margin:7px;
+    padding: 4px;
+  
+}
+
+nav a:hover{
+        font-size: 1.1rem;
+        border: 2px solid var(--thirdcolor);
+        border-radius: 2.5px;
+        transition: font-size 0.25s ease-in-out;
+    }
+
+
+body{
+    background-color:var(--primarycolor) ;
+    
+}
+
+
+#maintable{
+    width: 100%;
+}
+
+#maintable tbody{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 4;
+    row-gap: 20px;
+
+    
+}
+
+#logo{
+    display: inline-block;
+    height: 200px;
+    position: absolute;
+    right: 25%;
+    top:50px
+
+    
+}
+#title{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    grid-template-columns: repeat(3,1fr);
+
+    pre{
+        font-size: 1.2rem;
+        z-index: 1;
+
+    }
+    div{
+        font-size: 2rem;
+         z-index: 1;
+         grid-area: 1/1/2/3;
+    }
+    
+}
+
+
+
+
+#row1{
+    grid-area: 1/1/2/4;
+    height: 250px;
+}
+
+#row2{
+    grid-area: 2/1/3/4;
+    justify-self: center;
+    
+
+}
+#row3{
+    grid-area: 3/1/4/4;
+    grid-template-columns: repeat(3,1fr);
+
+}
+#row4{
+    grid-area: 4/1/5/4;
+    justify-self: center;
+}
+
+.mainrow{
+    display: grid;
+
+
+}
+
+#leftcol{
+    grid-area: 1/1/-1/2;
+    button{
+       width: 50px;
+       align-self: center;
+       background-color: var(--primarycolor);
+       border: 2px solid var(--thirdcolor);
+       margin: 5px;
+       border-radius: 3px;
+       padding: 3px 3px;
+       color: var(--secondarycolor);
+       cursor: pointer;
+    }
+    button:hover{
+        transform: scale(1.1);
+        box-shadow: 2px 2px 3px var(--thirdcolor);
+    }
+    h4{
+        margin-bottom: 10px;
+    }
+}
+
+
+#centercol{
+    grid-area: 1/2/-1/3;
+}
+
+#rightcol{
+    grid-area: 1/3/-1/4;
+}
+#personalphoto{
+    max-width: 200px;
+    width: 150px;
+}
+
+a[href='#row1']{
+    position: absolute;
+    top: 2000px;
+    
+}
+i{
+    transform: scale(3);
+    margin:20px
+}
+
+#thetravel a:hover{
+    filter:blur(2px);
+    color:rgb(117, 22, 22);
+    -webkit-filter: blur(1px);
+    font-size: 2.4rem;
+}
